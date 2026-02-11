@@ -1,0 +1,3 @@
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+<service android:name=".FloatingButtonService"
+         android:exported="false"/>
