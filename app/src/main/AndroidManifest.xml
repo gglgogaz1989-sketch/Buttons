@@ -1,3 +1,22 @@
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-<service android:name=".FloatingButtonService"
-         android:exported="false"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.floatingbutton">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.FloatingButtonApp">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FloatingButtonService"
+            android:exported="false"/>
+    </application>
+</manifest>
