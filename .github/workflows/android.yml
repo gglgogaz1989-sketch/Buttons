@@ -20,11 +20,13 @@ jobs:
         distribution: 'temurin'
         java-version: 17
 
-    - name: Make gradlew executable
-      run: chmod +x gradlew
+    - name: Install Gradle
+      uses: gradle/gradle-build-action@v3
+      with:
+        gradle-version: 8.3
 
     - name: Build Debug APK
-      run: ./gradlew assembleDebug
+      run: gradle assembleDebug --no-daemon
 
     - name: Run Unit Tests
-      run: ./gradlew test
+      run: gradle test --no-daemon
