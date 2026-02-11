@@ -7,7 +7,7 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // ⚡ не трогаем
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // ⚡ оставляем
     repositories {
         google()
         mavenCentral()
