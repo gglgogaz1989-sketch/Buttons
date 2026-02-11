@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +20,8 @@ jobs:
         distribution: 'temurin'
         java-version: 17
 
-    - name: Download Gradle Wrapper
-      run: ./gradlew --version
+    - name: Make gradlew executable
+      run: chmod +x gradlew
 
     - name: Build Debug APK
       run: ./gradlew assembleDebug
