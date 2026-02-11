@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Floating Button App</string>
+    <string name="add_button">Добавить кнопку</string>
+    <string name="hold">Зажатие</string>
+    <string name="jump">Прыжок</string>
+    <string name="key_space">SPACE</string>
+</resources>
