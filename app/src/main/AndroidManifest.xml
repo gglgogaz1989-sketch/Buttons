@@ -1,14 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.floatingbutton">
 
+    <!-- Разрешение для отображения поверх других приложений -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"  <!-- наша единственная иконка -->
         android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.FloatingButtonApp">
 
+        <!-- Главная Activity -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -16,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".FloatingButtonService"
+        <!-- Сервис для плавающих кнопок -->
+        <service
+            android:name=".FloatingButtonService"
             android:exported="false"/>
     </application>
 </manifest>
